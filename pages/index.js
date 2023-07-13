@@ -18,6 +18,8 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import firechatFC from "../public/firechatSC.png";
+import spoonfulSC from "../public/spoonfulSC.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -55,12 +57,12 @@ export default function Home() {
               Juancarlos Ramirez
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Web developer.
+              Web Developer, Designer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               I offer freelance services for programming and design content
               needs. Feel free to connect with me below and let's start working
-              together right away!!
+              together right away!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillTwitterCircle />
@@ -107,7 +109,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web1}
+                src={firechatFC}
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -116,7 +118,7 @@ export default function Home() {
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
+                src={spoonfulSC}
               />
             </div>
             <div className="basis-1/3 flex-1">
