@@ -18,11 +18,39 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
-import firechatFC from "../public/firechatSC.png";
+import firechatSC from "../public/firechatSC.png";
 import spoonfulSC from "../public/spoonfulSC.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const projects = [
+    {
+      title: "Project 1",
+      description:
+        "Description of Project 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      liveDemoLink: "#", // Add the actual live demo link here
+      githubRepoLink: "#", // Add the actual GitHub repo link here
+      imageSrc: firechatSC,
+    },
+    {
+      title: "Project 2",
+      description:
+        "Description of Project 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      liveDemoLink: "#", // Add the actual live demo link here
+      githubRepoLink: "#", // Add the actual GitHub repo link here
+      imageSrc: spoonfulSC,
+    },
+    {
+      title: "Project 3",
+      description:
+        "Description of Project 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      liveDemoLink: "#", // Add the actual live demo link here
+      githubRepoLink: "#", // Add the actual GitHub repo link here
+      imageSrc: web3,
+    },
+    // Add more projects as needed
+  ];
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -34,7 +62,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyjc</h1>
+            <h1 className="font-burtons text-xl">devbyjc</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -89,10 +117,9 @@ export default function Home() {
             </p>
           </div>
         </section>
-
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -102,61 +129,38 @@ export default function Home() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={firechatFC}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={spoonfulSC}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {projects.map((project, index) => (
+              <div key={index} className="flex-1 h-64">
+                <Image
+                  className="rounded-lg object-cover w-full h-full"
+                  src={project.imageSrc}
+                  layout="responsive"
+                />
+                <div className="p-4">
+                  <h4 className="text-xl font-medium text-gray-800 dark:text-white mb-2">
+                    {project.title}
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex space-x-4">
+                    <a
+                      href={project.liveDemoLink}
+                      className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-md hover:from-cyan-400 hover:to-teal-400"
+                    >
+                      Live Demo
+                    </a>
+                    <a
+                      href={project.githubRepoLink}
+                      className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300"
+                    >
+                      GitHub Repo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </main>
