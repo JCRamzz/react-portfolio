@@ -6,6 +6,6 @@ const nextConfig = {
 module.exports = {
   ...nextConfig,
   optimize: {
-    minimize: true,
+    minimize: false,
   },
 };
