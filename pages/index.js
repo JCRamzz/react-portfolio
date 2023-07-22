@@ -27,17 +27,18 @@ export default function Home() {
 
   const projects = [
     {
-      title: "Project 1",
-      description:
-        "Description of Project 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Firechat",
+      description: `Firechat is a chat application built with React and Firebase. 
+        It allows users to sign in with Google authentication and send messages in real-time.`,
       liveDemoLink: "https://firechat-1955a.web.app/", // Add the actual live demo link here
       githubRepoLink: "https://github.com/JCRamzz/Firechat", // Add the actual GitHub repo link here
       imageSrc: firechatSC,
     },
     {
-      title: "Project 2",
-      description:
-        "Description of Project 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Spoonful",
+      description: `Spoonful is a recipe search web app built using React, Vite, and Edamam API. 
+        It allows users to easily search for recipes by entering the name of a dish or an ingredient.
+        Users can view detailed information about each recipe, and save their favorites to their account`,
       liveDemoLink: "#", // Add the actual live demo link here
       githubRepoLink: "#", // Add the actual GitHub repo link here
       imageSrc: spoonfulSC,
@@ -103,7 +104,13 @@ export default function Home() {
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <AiFillTwitterCircle />
                 <AiFillLinkedin />
-                <AiFillGithub />
+                <a
+                  href="https://github.com/JCRamzz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub />
+                </a>
               </div>
               <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
                 <Image src={devjc} layout="fill" objectFit="cover" />
@@ -112,16 +119,14 @@ export default function Home() {
           </section>
           <section>
             <div>
-              <h3 className="text-3xl py-1 dark:text-white">
-                Lorem ipsum dolor
-              </h3>
+              <h3 className="text-3xl py-1 dark:text-white">About Me</h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                With over 8 years of experience in retail management at HEB and
+                5 years in Software development My passion lies in web
+                development technologies, particularly React, where I creatively
+                solve problems and craft user-centric solutions. Fluent in
+                English and Spanish, I foster seamless communication and thrive
+                in delivering cutting-edge, user-focused web solutions.
               </p>
             </div>
           </section>
@@ -129,12 +134,7 @@ export default function Home() {
             <div>
               <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
               <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                These are some of my personal projects
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
