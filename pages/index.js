@@ -75,7 +75,8 @@ export default function Home() {
                 <li>
                   <a
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                    href="#"
+                    href="https://drive.google.com/file/d/11J7BJi17QkpsW7DhpYSkGH1MPj-mZSfJ/view?usp=drive_link"
+                    download="JuanRamirezResume.pdf"
                   >
                     Resume
                   </a>
