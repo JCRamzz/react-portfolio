@@ -22,6 +22,7 @@ import web6 from "../public/web6.png";
 import firechatSC from "../public/firechatSC.png";
 import spoonfulSC from "../public/spoonfulSC.png";
 import fyyurSC from "../public/FyyurSC.png";
+import swaggerSC from "../public/swaggerSC.png";
 import TypingEffect from "react-typing-effect"; // Import the TypingEffect component
 
 export default function Home() {
@@ -32,8 +33,8 @@ export default function Home() {
       title: "Firechat",
       description: `Firechat is a chat application built with React and Firebase. 
         It allows users to sign in with Google authentication and send messages in real-time.`,
-      liveDemoLink: "https://firechat-1955a.web.app/", // Add the actual live demo link here
-      githubRepoLink: "https://github.com/JCRamzz/Firechat", // Add the actual GitHub repo link here
+      liveDemoLink: "https://firechat-1955a.web.app/",
+      githubRepoLink: "https://github.com/JCRamzz/Firechat",
       imageSrc: firechatSC,
     },
     {
@@ -42,7 +43,7 @@ export default function Home() {
         It allows users to easily search for recipes by entering the name of a dish or an ingredient.
         Users can view detailed information about each recipe, and save their favorites to their account`,
       liveDemoLink: "#", // Add the actual live demo link here
-      githubRepoLink: "https://github.com/JCRamzz/Spoonful", // Add the actual GitHub repo link here
+      githubRepoLink: "https://github.com/JCRamzz/Spoonful",
       imageSrc: spoonfulSC,
     },
     {
@@ -52,8 +53,16 @@ export default function Home() {
       The user is able to list new artists and venues, or list shows with artists as a venue owner.
       as a venue owner`,
       liveDemoLink: "#", // Add the actual live demo link here
-      githubRepoLink: "https://github.com/JCRamzz/Fyyur", // Add the actual GitHub repo link here
+      githubRepoLink: "https://github.com/JCRamzz/Fyyur",
       imageSrc: fyyurSC,
+    },
+    {
+      title: "Weather App",
+      description: `This simple Web Service Application was built with Flask and uses Swagger as a UI.
+      A user is able to make an account and log in, then search for the weather by entering their zip code.`,
+      liveDemoLink: "#", // Add the actual live demo link here
+      githubRepoLink: "https://github.com/JCRamzz/Web-Service",
+      imageSrc: swaggerSC,
     },
     // Add more projects as needed
   ];
