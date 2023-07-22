@@ -23,7 +23,7 @@ import web6 from "../public/web6.png";
 import firechatSC from "../public/firechatSC.png";
 import spoonfulSC from "../public/spoonfulSC.png";
 import fyyurSC from "../public/FyyurSC.png";
-import swaggerSC from "../public/SwaggerSC.png";
+import swaggerSC from "../public/SwaggerSC.PNG";
 import TypingEffect from "react-typing-effect"; // Import the TypingEffect component
 
 export default function Home() {
