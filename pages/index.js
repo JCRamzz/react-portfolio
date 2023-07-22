@@ -23,7 +23,6 @@ import web6 from "../public/web6.png";
 import firechatSC from "../public/firechatSC.png";
 import spoonfulSC from "../public/spoonfulSC.png";
 import fyyurSC from "../public/FyyurSC.png";
-import swaggerSC from "../public/SwaggerSC.PNG";
 import TypingEffect from "react-typing-effect"; // Import the TypingEffect component
 
 export default function Home() {
@@ -63,7 +62,7 @@ export default function Home() {
       A user is able to make an account and log in, then search for the weather by entering their zip code.`,
       liveDemoLink: "#", // Add the actual live demo link here
       githubRepoLink: "https://github.com/JCRamzz/Web-Service",
-      imageSrc: swaggerSC,
+      imageSrc: web3,
     },
     // Add more projects as needed
   ];
