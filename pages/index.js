@@ -4,6 +4,7 @@ import {
   AiFillLinkedin,
   AiFillYoutube,
   AiFillGithub,
+  AiFillMail,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
@@ -20,6 +21,7 @@ import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import firechatSC from "../public/firechatSC.png";
 import spoonfulSC from "../public/spoonfulSC.png";
+import fyyurSC from "../public/FyyurSC.png";
 import TypingEffect from "react-typing-effect"; // Import the TypingEffect component
 
 export default function Home() {
@@ -40,16 +42,18 @@ export default function Home() {
         It allows users to easily search for recipes by entering the name of a dish or an ingredient.
         Users can view detailed information about each recipe, and save their favorites to their account`,
       liveDemoLink: "#", // Add the actual live demo link here
-      githubRepoLink: "#", // Add the actual GitHub repo link here
+      githubRepoLink: "https://github.com/JCRamzz/Spoonful", // Add the actual GitHub repo link here
       imageSrc: spoonfulSC,
     },
     {
-      title: "Project 3",
-      description:
-        "Description of Project 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Fyyur",
+      description: `Fyyur is a full-stack project built with the Python framework Flask and SQLalchemy.
+      Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of shows between local performing artists and venues.
+      The user is able to list new artists and venues, or list shows with artists as a venue owner.
+      as a venue owner`,
       liveDemoLink: "#", // Add the actual live demo link here
-      githubRepoLink: "#", // Add the actual GitHub repo link here
-      imageSrc: web3,
+      githubRepoLink: "https://github.com/JCRamzz/Fyyur", // Add the actual GitHub repo link here
+      imageSrc: fyyurSC,
     },
     // Add more projects as needed
   ];
@@ -104,13 +108,18 @@ export default function Home() {
               <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
                 <AiFillTwitterCircle />
                 <AiFillLinkedin />
-                <a
-                  href="https://github.com/JCRamzz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiFillGithub />
-                </a>
+                <div className="flex gap-16 items-center">
+                  <a
+                    href="https://github.com/JCRamzz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AiFillGithub />
+                  </a>
+                  <a href="mailto:jcramz1992@gmail.com">
+                    <AiFillMail />
+                  </a>
+                </div>
               </div>
               <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
                 <Image src={devjc} layout="fill" objectFit="cover" />
@@ -137,7 +146,7 @@ export default function Home() {
                 These are some of my personal projects
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {projects.map((project, index) => (
                 <div key={index} className="flex-1">
                   <Image
