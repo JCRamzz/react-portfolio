@@ -21,7 +21,6 @@
     "react-typewriter-effect": "^1.1.0",
     "react-typewriter-hook": "^1.0.1",
     "react-typing-effect": "^2.0.5",
-    "react-typist": "^2.0.5",
     "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
