@@ -23,6 +23,7 @@ import web6 from "../public/web6.png";
 import firechatSC from "../public/firechatSC.png";
 import spoonfulSC from "../public/spoonfulSC.png";
 import fyyurSC from "../public/FyyurSC.png";
+import ecommerceSC from "../public/ecommerceSC.png";
 import TypingEffect from "react-typing-effect"; // Import the TypingEffect component
 
 export default function Home() {
@@ -37,6 +38,16 @@ export default function Home() {
       githubRepoLink: "https://github.com/JCRamzz/Firechat",
       imageSrc: firechatSC,
     },
+
+    {
+      title: "E-Commerce Shop",
+      description: `This e-commerce app, built with React, utilizes React Router for smooth navigation and context providers to efficiently manage app state. 
+      The app features a responsive UI, allowing users to browse products, view product details, and add items to the cart for a seamless shopping experience.`,
+      liveDemoLink: "https://ecommerce-shop-self-five.vercel.app/", // Add the actual live demo link here
+      githubRepoLink: "https://github.com/JCRamzz/Ecommerce-shop",
+      imageSrc: ecommerceSC,
+    },
+
     {
       title: "Spoonful",
       description: `Spoonful is a recipe search web app built using React, Vite, and Edamam API. 
@@ -56,14 +67,7 @@ export default function Home() {
       githubRepoLink: "https://github.com/JCRamzz/Fyyur",
       imageSrc: fyyurSC,
     },
-    {
-      title: "Weather App",
-      description: `This simple Web Service Application was built with Flask and uses Swagger as a UI.
-      A user is able to make an account and log in, then search for the weather by entering their zip code.`,
-      liveDemoLink: "#", // Add the actual live demo link here
-      githubRepoLink: "https://github.com/JCRamzz/Web-Service",
-      imageSrc: web3,
-    },
+
     // Add more projects as needed
   ];
 
